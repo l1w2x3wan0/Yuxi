@@ -7,6 +7,36 @@
  */
 
 $m = new MongoClient();
+$db = $m->test;
+$collection = $db->runoob;
+$document = array(
+    "title" => "MongoDB",
+    "description" => "database",
+    "likes" => 100,
+    "url" => "http://www.runoob.com/mongodb/",
+    "by", "hello"
+);
+$collection->insert($document);
+echo "OK";
+
+exit;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$m = new MongoClient();
 
 $db = $m->mydb;
 

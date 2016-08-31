@@ -34,7 +34,7 @@ class SingleDatabase
 
     private function __clone()
     {
-
+        exit('could not clone');
     }
 
     public function init($config)
